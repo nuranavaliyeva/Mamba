@@ -1,0 +1,23 @@
+﻿@using MambaMVC.Areas.Admin.ViewModels.Professions
+
+@model ProfessionCreateVM
+<div class="col-md-6 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Create Profession</h4>
+
+            <form class="forms-sample" method="post">
+                <div class="form-group row">
+                    <label asp-for="Name" for="exampleInputUsername2" class="col-sm-3 col-form-label">Name</label>
+                    <div class="col-sm-9">
+                        <input asp-for="Name" class="form-control" id="exampleInputUsername2" placeholder="Name">
+                    </div>
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary me-2">Submit</button>
+                <button class="btn btn-light">Cancel</button>
+            </form>
+        </div>
+    </div>
+</div>
