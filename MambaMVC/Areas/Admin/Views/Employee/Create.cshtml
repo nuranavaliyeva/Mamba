@@ -1,0 +1,44 @@
+﻿@using MambaMVC.Areas.Admin.ViewModels
+@model EmployeeCreateVM
+<div class="col-md-6 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Create Employee</h4>
+           
+            <form class="forms-sample">
+                <div class="form-group row">
+                    <label asp-for="Name" for="exampleInputUsername2" class="col-sm-3 col-form-label">Name</label>
+                    <div class="col-sm-9">
+                        <input asp-for="Name" class="form-control" id="exampleInputUsername2" placeholder="Name">
+                    </div>
+                    <span asp-validation-for="Name"></span>
+                </div>
+               
+                <div class="form-group row">
+                    <label asp-for="Surname" for="exampleInputMobile" class="col-sm-3 col-form-label">Surname</label>
+                    <div class="col-sm-9">
+                        <input asp-for="Surname" class="form-control" id="exampleInputMobile" placeholder="Surname">
+                    </div>
+                    <span asp-validation-for="Surname"></span>
+                </div>
+                <div class="form-group row">
+                    <label asp-for="ProfessionId" for="exampleInputPassword2" class="col-sm-3 col-form-label">Profession</label>
+                    <div class="col-sm-9">
+                        <input asp-for="ProfessionId" class="form-control" id="exampleInputPassword2" placeholder="Profession">
+                    </div>
+                    <span asp-validation-for="ProfessionId"></span>
+                </div>
+                <div class="form-group row">
+                    <label asp-for="Image" for="exampleInputConfirmPassword2" class="col-sm-3 col-form-label">Image</label>
+                    <div class="col-sm-9">
+                        <input asp-for="Image" class="form-control" id="exampleInputConfirmPassword2" placeholder="Image">
+                    </div>
+                    <span asp-validation-for="Image"></span>
+                </div>
+                
+                <button type="submit" class="btn btn-primary me-2">Submit</button>
+                <button class="btn btn-light">Cancel</button>
+            </form>
+        </div>
+    </div>
+</div>
